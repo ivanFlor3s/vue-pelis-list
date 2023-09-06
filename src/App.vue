@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import MyPelicula from './components/icons/MyPelicula.vue'
+// import MyPelicula from './components/MyPelicula.vue'
+import RMContainer from './pages/rick-morty-api-test/components/RMContainer.vue'
 
 const peliculas = [
   { id: 1, nombre: "El Padrino", año: 1972 },
@@ -23,15 +24,16 @@ const peliculas = [
   </header>
 
   <main>
-    <p>Una de las mejores apps para ordenar una lista de peliculas</p>
+    <!-- <p>Una de las mejores apps para ordenar una lista de peliculas</p>
     <hr>
 
     <h2>Cards</h2>
     <div class="d-flex flex-wrap gap-3">
       <MyPelicula v-for="item in peliculas" :key="item.id" :nombre="item.nombre" :año="item.año" :id="item.id">
       </MyPelicula>
-    </div>
-
+    </div> -->
+    <RMContainer>
+    </RMContainer>
   </main>
 </template>
 
